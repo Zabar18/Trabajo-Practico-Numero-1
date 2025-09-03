@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Compra</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fbfd;
+      margin: 0;
+      color: #0b1a1f;
+    }
+    header {
+      background: linear-gradient(90deg, #2b6f9f, #75b6e6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .box {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    .form-group textarea {
+      resize: vertical;
+      min-height: 60px;
+    }
+    .submit-btn {
+      background: #2b6f9f;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .submit-btn:hover {
+      background: #1f4e70;
+    }
+    .productos-lista ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+    .productos-lista li {
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Formulario de Compra</h1>
+    <p>Complete sus datos para finalizar el pedido</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Datos del cliente -->
+    <div class="box">
+      <h2>Datos del Cliente</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="pago">Medio de Pago</label>
+          <select id="pago" name="pago" required>
+            <option value="">Seleccione una opción</option>
+            <option value="tarjeta">Tarjeta de Crédito/Débito</option>
+            <option value="transferencia">Transferencia Bancaria</option>
+            <option value="mercadopago">MercadoPago</option>
+            <option value="efectivo">Efectivo (contra entrega)</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Finalizar Compra</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

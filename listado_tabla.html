@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Escudos Argentinos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fbfd;
+      margin: 0;
+      color: #0b1a1f;
+    }
+    header {
+      background: linear-gradient(90deg, #2b6f9f, #75b6e6);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+    .club {
+      font-weight: bold;
+      font-size: 18px;
+      color: #2b6f9f;
+    }
+    .material {
+      font-size: 14px;
+      color: #444;
+    }
+    .descripcion {
+      font-size: 13px;
+      margin-top: 8px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Escudos Argentinos</h1>
+    <p>Modelos en goma, madera y tela bordada</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <img src="Default.jpg">
+      <div class="club">Boca Juniors</div>
+      <div class="material">Goma – 7 cm</div>
+      <div class="descripcion">Escudo económico y liviano en goma.</div>
+    </div>
+
+    <div class="card">
+      <img src="Default.jpg">
+      <div class="club">River Plate</div>
+      <div class="material">Madera – 12 cm</div>
+      <div class="descripcion">Escudo artesanal y resistente en madera.</div>
+    </div>
+
+    <div class="card">
+      <img src="Default.jpg">
+      <div class="club">Independiente</div>
+      <div class="material">Tela Bordada – 5 cm</div>
+      <div class="descripcion">Escudo coleccionable en tela bordada.</div>
+    </div>
+
+    <div class="card">
+      <img src="Default.jpg">
+      <div class="club">Racing Club</div>
+      <div class="material">Madera – 12 cm</div>
+      <div class="descripcion">Escudo artesanal en madera pintada.</div>
+    </div>
+
+    <div class="card">
+      <img src="Default.jpg">
+      <div class="club">San Lorenzo</div>
+      <div class="material">Goma – 7 cm</div>
+      <div class="descripcion">Escudo económico y liviano en goma.</div>
+    </div>
+  </div>
+</body>
+</html>
+

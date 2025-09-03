@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escudos Argentinos — Mini escudos y souvenires</title>
+  <meta name="description" content="Mini escudos argentinos hechos a mano. Ideal para colecciones, souvenirs y regalos patrios. Envíos a todo el país." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --azul:#75b6e6;    
+      --azul-osc:#2b6f9f; 
+      --blanco:#ffffff;
+      --oro:#d4a04a;     
+      --ink:#0b1a1f;
+      --muted:#5f6b72;
+      --card:#f8fbfd;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Montserrat', Arial;
+      color:var(--ink);
+      background:linear-gradient(180deg, #75b6e6, #ffffff);;
+    }
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    nav a{
+      margin-left:14px;
+      font-weight:600;
+      color:var(--blanco);
+      text-decoration:none;
+    }
+    nav a:hover{color:var(--oro)}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:28px;
+      padding:48px 0;
+    }
+    .eyebrow{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(117,182,230,.12);
+      color:var(--azul-osc);
+      font-weight:600;
+      font-size:13px;
+    }
+    h1{
+      font-family:Montserrat, Inter, sans-serif;
+      font-size:clamp(28px,4vw,46px);
+      margin:16px 0 12px;
+    }
+    p.lead{
+      color:var(--muted);
+      max-width:60ch;
+      margin-bottom:18px;
+    }
+    .features{
+      display:flex;
+      gap:12px;
+      margin-top:18px;
+      flex-wrap:wrap
+    }
+    .feature{
+      padding:10px;
+      border-radius:10px;
+      border:1px solid rgba(11,26,31,.04);
+      font-weight:600;
+      color:var(--muted);
+    }
+    .strip{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:22px
+    }
+    .mini-card{
+      background:var(--blanco);
+      padding:12px;
+      border-radius:12px;
+      min-width:120px;
+      border:1px solid rgba(11,26,31,.04);
+      text-align:center;
+    }
+    .mini-card img{
+      width:100%;
+      height:78px;
+      object-fit:cover;
+      border-radius:8px
+    }
+    .mini-card small{
+      display:block;
+      margin-top:8px;
+      color:var(--muted)
+    }
+    .trust{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-top:22px;
+      color:var(--muted);
+      font-size:14px;
+      flex-wrap:wrap;
+    }
+    footer{
+      border-top:1px solid rgba(11,26,31,.04);
+      padding:18px 0;
+      margin-top:36px;
+      color:var(--muted);
+      font-size:14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#coleccion">Colecciones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="eyebrow">Edición limitada • Inspirado en la tradición</span>
+        <h1>Mini escudos argentinos — la pasión en la palma de tu mano</h1>
+        <p class="lead">Escudos de goma, madera o tela bordada en venta, fabricados de manera artesanal. Perfectos para colecciones, regalos y decoraciones.</p>
+
+        <div class="features">
+          <div class="feature">Tamaños: 4–12 cm</div>
+          <div class="feature">Materiales: Goma, madera o tela</div>
+        </div>
+
+        <div class="strip">
+          <div class="mini-card">
+            <img src="Independiente.jpg" alt="Escudo madera de independiente"/>
+            <small>Escudo madera • 12 cm</small>
+          </div>
+          <div class="mini-card">
+            <img src="Boca.jpg" alt="Escudo goma de boca"/>
+            <small>Escudo goma • 7 cm</small>
+          </div>
+          <div class="mini-card">
+            <img src="River.jpg" alt="Escudo tela de River"/>
+            <small>Escudo tela • 5 cm</small>
+          </div>
+        </div>
+
+        <div class="trust">
+          <div>✔ Envíos a toda la provincia de Misiones</div>
+          <div>✔ Producción responsable</div>
+          <div>✔ Calidad garantizada</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" style="margin-top:28px"></section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> Escudos Argentinos</div>
+      <div>Contacto: <a href="mailto:ventas@escudosargentinos.example">ventas@escudosargentinos.example</a> • WhatsApp: +54 9 11 1234 5678</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
